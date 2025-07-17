@@ -1,0 +1,54 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://aiwip.org/schemas/aiwip-articles.schema.json",
+  "title": "AIWIP Articles Schema",
+  "description": "Provides a structured list of blog posts, articles, or news updates a site publishes, optimised for AI summarisation and discovery.",
+  "type": "object",
+  "required": ["aiwip-version", "articles"],
+  "properties": {
+    "aiwip-version": {
+      "type": "string",
+      "enum": ["0.1"],
+      "description": "The version of the AIWIP spec this file conforms to."
+    },
+    "articles": {
+      "type": "array",
+      "description": "A list of articles or blog posts.",
+      "items": {
+        "type": "object",
+        "required": ["title", "summary", "url", "published"],
+        "properties": {
+          "title": {
+            "type": "string",
+            "description": "The title of the article."
+          },
+          "summary": {
+            "type": "string",
+            "description": "A brief AI-optimised summary (1–2 sentences) of the article’s content."
+          },
+          "url": {
+            "type": "string",
+            "format": "uri",
+            "description": "Link to the full article."
+          },
+          "published": {
+            "type": "string",
+            "format": "date",
+            "description": "Date the article was published (ISO format: YYYY-MM-DD)."
+          },
+          "tags": {
+            "type": "array",
+            "items": { "type": "string" },
+            "description": "Optional tags or keywords related to the article."
+          },
+          "author": {
+            "type": "string",
+            "description": "Optional name of the article author."
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}
