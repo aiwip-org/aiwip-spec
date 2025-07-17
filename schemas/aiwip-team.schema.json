@@ -1,0 +1,53 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://aiwip.org/schemas/aiwip-team.schema.json",
+  "title": "AIWIP Team Schema",
+  "description": "Defines the key team members or leadership associated with an organisation or website for AI discovery and attribution.",
+  "type": "object",
+  "required": ["aiwip-version", "team"],
+  "properties": {
+    "aiwip-version": {
+      "type": "string",
+      "enum": ["0.1"],
+      "description": "The version of the AIWIP spec this file conforms to."
+    },
+    "team": {
+      "type": "array",
+      "description": "List of key team members.",
+      "items": {
+        "type": "object",
+        "required": ["name", "role"],
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Full name of the person."
+          },
+          "role": {
+            "type": "string",
+            "description": "Their role or title in the organisation."
+          },
+          "bio": {
+            "type": "string",
+            "description": "Short summary or bio describing their background or expertise."
+          },
+          "socials": {
+            "type": "object",
+            "properties": {
+              "linkedin": { "type": "string", "format": "uri" },
+              "github": { "type": "string", "format": "uri" },
+              "twitter": { "type": "string", "format": "uri" }
+            },
+            "description": "Links to public social/professional profiles."
+          },
+          "photo": {
+            "type": "string",
+            "format": "uri",
+            "description": "URL to a profile picture or avatar."
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}
