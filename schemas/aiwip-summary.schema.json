@@ -1,0 +1,64 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://aiwip.org/schemas/aiwip-summary.schema.json",
+  "title": "AIWIP Summary Schema",
+  "description": "Schema for exposing a website's AI-readable summary as part of the AI Web Interface Protocol (AIWIP).",
+  "type": "object",
+  "required": ["aiwip-version", "name", "description", "website"],
+  "properties": {
+    "aiwip-version": {
+      "type": "string",
+      "enum": ["0.1"],
+      "description": "The version of the AIWIP spec this summary conforms to."
+    },
+    "name": {
+      "type": "string",
+      "description": "The name of the business, product, or project."
+    },
+    "description": {
+      "type": "string",
+      "description": "A short summary describing what the site, service, or business does."
+    },
+    "location": {
+      "type": "string",
+      "description": "The general location (e.g., city or country) the business is based in or operates from."
+    },
+    "services": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "A list of key services or offerings."
+    },
+    "website": {
+      "type": "string",
+      "format": "uri",
+      "description": "The public-facing website URL."
+    },
+    "contact-email": {
+      "type": "string",
+      "format": "email",
+      "description": "Public-facing email address for inquiries."
+    },
+    "socials": {
+      "type": "object",
+      "description": "Links to relevant social media profiles.",
+      "properties": {
+        "linkedin": {
+          "type": "string",
+          "format": "uri"
+        },
+        "twitter": {
+          "type": "string",
+          "format": "uri"
+        },
+        "github": {
+          "type": "string",
+          "format": "uri"
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}
