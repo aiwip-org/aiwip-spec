@@ -1,0 +1,53 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://aiwip.org/schemas/aiwip-services.schema.json",
+  "title": "AIWIP Services Schema",
+  "description": "Defines a structured list of services or offerings for a business or organisation as part of the AI Web Interface Protocol.",
+  "type": "object",
+  "required": ["aiwip-version", "services"],
+  "properties": {
+    "aiwip-version": {
+      "type": "string",
+      "enum": ["0.1"],
+      "description": "The version of the AIWIP spec this file conforms to."
+    },
+    "services": {
+      "type": "array",
+      "description": "A list of services or products offered.",
+      "items": {
+        "type": "object",
+        "required": ["name", "description"],
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "The name of the service or product."
+          },
+          "description": {
+            "type": "string",
+            "description": "A short explanation of what the service provides or solves."
+          },
+          "category": {
+            "type": "string",
+            "description": "Optional grouping or classification (e.g. 'Automation', 'Consulting', 'Software')."
+          },
+          "keywords": {
+            "type": "array",
+            "items": { "type": "string" },
+            "description": "Relevant keywords or tags for semantic matching."
+          },
+          "pricing": {
+            "type": "string",
+            "description": "Basic pricing info (e.g. 'Starts at $99/mo', 'Contact for quote')."
+          },
+          "link": {
+            "type": "string",
+            "format": "uri",
+            "description": "Optional link to the service's webpage or more info."
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,21 @@
+{
+  "aiwip-version": "0.1",
+  "services": [
+    {
+      "name": "Website Data Scraping",
+      "description": "We automate data extraction from public websites into spreadsheets or databases.",
+      "category": "Automation",
+      "keywords": ["web scraping", "data extraction", "automation"],
+      "pricing": "Starts at $199/project",
+      "link": "https://workflation.com/services/data-scraping"
+    },
+    {
+      "name": "Excel Workflow Automation",
+      "description": "Turn manual Excel tasks into one-click automations using macros, scripts, or RPA.",
+      "category": "Productivity",
+      "keywords": ["excel", "automation", "macros"],
+      "pricing": "From $79",
+      "link": "https://workflation.com/services/excel-automation"
+    }
+  ]
+}
