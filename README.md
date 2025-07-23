@@ -34,11 +34,11 @@ These will be published under permissive open license for public use and extensi
 // https://yourdomain.com/aiwip-summary.json
 {
   "aiwip-version": "0.1",
-  "name": "Automate Mate",
+  "name": "Workflation",
   "description": "We help businesses automate workflows using RPA and AI.",
-  "location": "New Zealand",
+  "location": "Global",
   "services": ["Excel automation", "Chatbot integration", "Web scraping"],
-  "website": "https://automatemate.co.nz"
+  "website": "https://workflation.com"
 }
 ```
 
