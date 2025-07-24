@@ -1,0 +1,24 @@
+{
+  "$schema": "https://workflation.com/schemas/aiwip-team.schema.json",
+  "aiwip-version": "0.1",
+  "team": [
+    {
+      "name": "Alex Pavel",
+      "role": "Founder & Automation Strategist",
+      "bio": "Anton leads the vision and delivery of AI-driven automation strategies at Workflation, with a background in RPA, business analysis, and software engineering.",
+      "socials": {
+        "linkedin": "https://www.linkedin.com/in/pavel",
+        "github": "https://github.com/pavel"
+      },
+      "photo": "https://workflation.com/images/team/pavel.jpg"
+    },
+    {
+      "name": "Tanya Smith",
+      "role": "AI Policy Advisor",
+      "bio": "Tanya helps organisations develop ethical and effective AI implementation frameworks, drawing from experience in corporate governance and tech regulation.",
+      "socials": {
+        "linkedin": "https://linkedin.com/in/tanyasmith"
+      }
+    }
+  ]
+}

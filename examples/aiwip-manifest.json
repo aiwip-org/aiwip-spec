@@ -1,0 +1,30 @@
+{
+  "aiwip-version": "0.1",
+  "name": "Workflation",
+  "files": [
+    {
+      "name": "FAQ",
+      "url": "https://workflation.com/aiwip/aiwip-faq.json"
+    },
+    {
+      "name": "Contact",
+      "url": "https://workflation.com/aiwip/aiwip-contact.json"
+    },
+    {
+      "name": "Summary",
+      "url": "https://workflation.com/aiwip/aiwip-about.json"
+    },
+    {
+      "name": "Team",
+      "url": "https://workflation.com/aiwip/aiwip-team.json"
+    },
+    {
+      "name": "Services",
+      "url": "https://workflation.com/aiwip/aiwip-services.json"
+    },
+    {
+      "name": "Articles",
+      "url": "https://workflation.com/aiwip/articles.json"
+    }
+  ]
+}
